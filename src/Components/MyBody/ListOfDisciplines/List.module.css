@@ -1,0 +1,60 @@
+.Book {
+   display: grid;
+
+   margin: 10px auto;
+
+   grid-template-areas:
+      "m_1  m_2  m_3"
+      "m_4  m_5  m_6";
+   grid-gap: 10px;
+   grid-template-rows: repeat(2, 1fr);
+   grid-template-columns: repeat(3, 1fr);
+}
+
+.imgBook {
+   grid-area: m_1;
+   width: 100px;
+   height: 100px;
+   background: url("../../../Picture/Book.jpg");
+   background-size: cover;
+}
+
+.imgBook1 {
+   grid-area: m_2;
+   width: 100px;
+   height: 100px;
+   background: url("../../../Picture/Book.jpg");
+   background-size: cover;
+}
+
+.imgBook2 {
+   grid-area: m_3;
+   width: 100px;
+   height: 100px;
+   background: url("../../../Picture/Book.jpg");
+   background-size: cover;
+}
+
+.imgBook3 {
+   grid-area: m_4;
+   width: 100px;
+   height: 100px;
+   background: url("../../../Picture/Book.jpg");
+   background-size: cover;
+}
+
+.imgBook4 {
+   grid-area: m_5;
+   width: 100px;
+   height: 100px;
+   background: url("../../../Picture/Book.jpg");
+   background-size: cover;
+}
+
+.imgBook5 {
+   grid-area: m_6;
+   width: 100px;
+   height: 100px;
+   background: url("../../../Picture/Book.jpg");
+   background-size: cover;
+}

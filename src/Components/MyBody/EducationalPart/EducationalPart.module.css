@@ -1,0 +1,26 @@
+.mainContaineer{
+  display: grid;
+  
+  /* background-image: url("./Picture/Fon.png") ;	 */
+  margin: 10px auto;
+  
+  grid-template-areas:   "m_1  m_2 ";
+  grid-gap: 10px;
+  grid-template-columns: repeat(2, 2fr);
+  }
+  
+  
+.app_Timetable{
+      grid-area: m_1;
+      width: 180px;
+     height: 200px;
+     background: url("../../../Picture/cadet.jpg");
+     background-size: cover;
+    }
+.app_Disciplines{
+      grid-area: m_2;    
+      width: 180px;
+      height: 200px;
+      position: center;
+      background: url("../../../Picture/PainSmall.png") ;
+    }

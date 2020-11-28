@@ -1,0 +1,36 @@
+
+.MyNav{
+  grid-area: m_N;
+  background-color: rgba(132, 165, 199, 0.678);
+}
+.item{
+	height:50px;
+	width: 100%;
+	box-sizing: border-box;
+  border-radius: 0px;
+  border: none;
+background-color: rgba(0, 120, 201, 0.1);
+transition-duration: 0.4s;
+cursor:pointer;
+color:white;
+font-family: "Century Gothic";
+user-select: none;
+text-align: center;
+text-decoration: none;
+margin:auto;
+outline: none;
+user-select: none;
+}
+.item:hover{
+  background-color: rgba(0, 120, 201, 0.5);
+  border: none;
+  user-select: none;
+  transform: translateX(2px);
+}
+
+.item:active {
+  background-color: rgba(0, 120, 201, 0.5);
+   border: none;
+   user-select: none;
+   transform: translateX(-4px);
+}

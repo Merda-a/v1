@@ -1,0 +1,61 @@
+
+.okno{
+	/*border: 1px solid green;*/
+	margin:auto;
+	font-size:20px ;
+	position: relative;/*Так обозначается родитель*/
+	color: white;
+	text-align: center;
+	height:800px;
+	width: 798px;
+
+}
+.text2{
+	padding-top: 30px;
+color: white;
+margin:auto;
+font-size:30px;
+user-select: none;
+}
+.aut{
+	/*position: absolute;положение относительно родителя
+	top: 20px;
+	left: 20px;
+	*/
+	height:400px;
+	width: 651px;
+	background-image: url("./../../Picture/FonAut.png");
+	margin: auto;
+	margin-top:10px;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+}
+.login {
+height:52px;
+	width: 394px;
+	background-image: url("./../../Picture/Login.png");
+	margin: auto;
+	margin-top:60px;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+}
+
+.password {
+height:52px;
+	width: 394px;
+	background-image: url("./../../Picture/Пароль.png");
+	margin: auto;
+	margin-top:20px;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+}
+
+.button {
+height:52px;
+	width: 394px;
+	margin: auto;
+	margin-top:20px;
+	background-image: url("./../../Picture/Knopka.png");
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+}

@@ -1,0 +1,146 @@
+.gridMain{
+   display: grid;
+  
+  /* background-image: url("./Picture/Fon.png") ;	 */
+  margin: 10px auto;
+  
+  grid-template-areas:   "m_1  m_2 ";
+  
+  grid-template-columns: 1fr 6fr;
+}
+
+.gridLeftSide{
+   grid-area: m_1;    
+}
+
+.container {
+   grid-area: m_2;    
+   max-width: 1140px;
+   margin: 0 auto;
+}
+.container .card {
+   position: relative;
+   width: 820px;
+   height: 300px;
+   /* background-color: rgb(29, 46, 90); */
+   background: url("../../../Picture/card-bg.jpg") 100% 100% no-repeat;
+   background-size: cover;
+   margin: 9px auto;
+   padding: 10px 150px 100px 40px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 0;
+}
+
+.container .card .card__img {
+   width: 180px;
+   height: 200px;
+   background: url("../../../Picture/PainSmall.png") center center no-repeat;
+   background-size: cover;
+   margin: 30px;
+   margin-right: 60px;
+}
+
+.container .card .card__descr {
+   width: 540px;
+   height: 212px;
+   background-color: rgb(132, 212, 243);
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+   padding: 30px 10px;
+}
+
+.container .card .card__descr .card__descr_block {
+   min-height: 40px;
+   min-width: 220px;
+   background-color: rgb(19, 39, 65);
+   margin: 15px 10px;
+   display: flex;
+   justify-content: start;
+   align-items: center;
+   color: #ffffff;
+   font-size: 20px;
+   padding-left: 15px;
+}
+
+.container .card .card__more_btn {
+   position: absolute;
+   bottom: 25px;
+   right: 30px;
+   width: 200px;
+   height: 50px;
+   background: linear-gradient(to top, #0e1029, #66b6db);
+   border: none;
+   border-radius: 5%;
+   outline: none;
+   cursor: pointer;
+   box-shadow: 0px 0px 10px #ffffff;
+   color: #ffffff;
+   font-size: 20px;
+   font-weight: 500;
+}
+
+.container .card .card__more_btn:hover {
+   background: rgb(56, 125, 155);
+}
+
+.container .card .card__more_btn :hover {
+   width: 210px;
+   height: 55px;
+}
+
+.container .card .card__update_btn {
+   position: absolute;
+   bottom: 25px;
+   right: 260px;
+   width: 200px;
+   height: 50px;
+   background: linear-gradient(to top, #0e1029, #66b6db);
+   border: none;
+   border-radius: 5%;
+   outline: none;
+   cursor: pointer;
+   box-shadow: 0px 0px 10px #ffffff;
+   color: #ffffff;
+   font-size: 20px;
+   font-weight: 500;
+}
+
+.container .card .card__update_btn:hover {
+   background: rgb(56, 125, 155);
+}
+
+.container .card .card__update_btn :hover {
+   width: 210px;
+   height: 55px;
+}
+
+.container .card .card__del_btn {
+   position: absolute;
+   bottom: 25px;
+   right: 480px;
+   width: 200px;
+   height: 50px;
+   background: linear-gradient(to top, #0e1029, #66b6db);
+   border: none;
+   border-radius: 5%;
+   outline: none;
+   cursor: pointer;
+   box-shadow: 0px 0px 10px #ffffff;
+   color: #ffffff;
+   font-size: 20px;
+   font-weight: 500;
+}
+
+.container .card .card__del_btn:hover {
+   background: rgb(56, 125, 155);
+}
+
+.container .card .card__del_btn :hover {
+   width: 210px;
+   height: 55px;
+}

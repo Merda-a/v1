@@ -1,0 +1,9 @@
+.AuthHeader{
+    grid-column:  5;
+    grid-row: span 10;
+    background-color:rgba(0, 120, 201, 0.5);
+  }
+  .AuthField{
+    background-color:rgba(0, 121, 201, 0.301);
+    background-position: center;
+  }
