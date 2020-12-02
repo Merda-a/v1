@@ -1,27 +1,30 @@
 
+import { setDataAC, getDisciplinesThunkCreator } from '../../../Redux/disciplines-redusers';
+import { ListOfDisciplines } from './ListClass';
 import { connect } from 'react-redux';
-import { setListAC, getUserbyIdThunkCreator } from '../../../Redux/list-reduser';
-import { ListClass } from './ListClass';
-import { withRouter } from 'react-router-dom';
+import { getUserInfoThunkCreator } from '../../../Redux/login-reduser';
+
 
 let maptoStateToProps = (state) => {
-   console.log(state);
+
    return {
-      ListPage: state.ListReduser.ListPage
+      disciplines: state.disciplinesReduser.disciplinesPage.disciplines,
+      user: state.LoginReduser
    }
 }
-
 let mapDispatchToProps = (dispatch) => {
    return {
-      setList: (ListPage) => {
-         dispatch(setListAC(ListPage));
+      setData: (data) => {
+         dispatch(setDataAC(data));
       },
-      getUserbyId: (id) => {
-         dispatch(getUserbyIdThunkCreator(id));
+      getUser: () => {
+         dispatch(getUserInfoThunkCreator());
+      },
+      getDisciplines: (group, dateTime) => {
+         dispatch(getDisciplinesThunkCreator());
       }
    }
 }
+const ListComponent = connect(maptoStateToProps, mapDispatchToProps)(ListOfDisciplines);
 
-let WithURL = withRouter(ListClass);
-
-export default connect(maptoStateToProps, mapDispatchToProps)(WithURL);
+export default ListComponent;

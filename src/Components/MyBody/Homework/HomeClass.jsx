@@ -11,19 +11,21 @@ import Doc from '../Documents/Document.doc';
 
 export class Homework extends React.Component {
    render() {
+      debugger
+      let id = this.props.match.params.id;
       return (
          <div>
-            <HomeReduxForm onSubmit={this.submit} role={this.props.user.profile} />
+            <Home  name={this.props.discipline.fullName} id={id}/>
          </div>
       )
    }
 }
 
 
-const HomeFormRedux = (props) => {
-
+const Home= (props) => {
+   debugger
    return (
-      <form onSubmit={props.handleSubmit}>
+      <div>
          <div className={classes.First}>
             <div className={classes.Nav}>
                <div class={classes.dropdown}>
@@ -104,17 +106,16 @@ const HomeFormRedux = (props) => {
 
             <div className={classes.Content}>
 
-               <h1>Содержание </h1>
+            <h1>
+               {props.name}
+            </h1>
+            <h1>
+               {props.id}
+            </h1>
             </div>
          </div>
 
-      </form >
+         </div>
    );
 }
-
-
-
-const HomeReduxForm = reduxForm({
-   form: 'group'
-})(HomeFormRedux)
 
