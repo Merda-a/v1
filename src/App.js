@@ -41,9 +41,9 @@ const App = (props) => {
             <Route path="/Cadets" render={() => { return <CadetsComponent /> }} />
             <Route path="/History" render={() => { return <HistoryOfChief /> }} />
             <Route path="/newUser" render={() => { return <NewUserContainer /> }} />
-            <Route path="/ListOfDisciplines/:id" render={() => { return <ListComponent /> }} />
+            <Route path="/ListOfDisciplines" render={() => { return <ListComponent /> }} />
             <Route path="/updateUser/:id" render={() => { return <UpdateUserContainer /> }} />
-            <Route path="/Homework" render={() => { return < HomeComponent /> }} />
+            <Route path="/Homework/:id" render={() => { return < HomeComponent /> }} />
             <Route path="/Lesson" render={() => { return <LessonContent /> }} />
          </div>
          <Footer />
