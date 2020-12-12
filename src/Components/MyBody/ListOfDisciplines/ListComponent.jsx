@@ -1,5 +1,5 @@
 
-import { setDataAC, getDisciplinesThunkCreator } from '../../../Redux/disciplines-redusers';
+import { getDisciplinesThunkCreator } from '../../../Redux/disciplines-redux';
 import { ListOfDisciplines } from './ListClass';
 import { connect } from 'react-redux';
 import { getUserInfoThunkCreator } from '../../../Redux/login-reduser';
@@ -7,20 +7,19 @@ import { getUserInfoThunkCreator } from '../../../Redux/login-reduser';
 
 let maptoStateToProps = (state) => {
 
+   debugger
    return {
-      disciplines: state.disciplinesReduser.disciplinesPage.disciplines,
+      disciplines: state.DisciplinesReduser.disciplines,
       user: state.LoginReduser
    }
 }
 let mapDispatchToProps = (dispatch) => {
    return {
-      setData: (data) => {
-         dispatch(setDataAC(data));
-      },
+      
       getUser: () => {
          dispatch(getUserInfoThunkCreator());
       },
-      getDisciplines: (group, dateTime) => {
+      getDisciplines: () => {
          dispatch(getDisciplinesThunkCreator());
       }
    }

@@ -11,7 +11,15 @@ const instance = axios.create(
       baseURL: "https://localhost:44351/api/"
    }
 );
-
+const instance2 = axios.create(
+   {
+      //withCredentials :true,
+      headers: {
+         'Content-Type': 'application/json'
+      },
+      baseURL: " http://k41.kafedra41.local/WB/api"
+   }
+);
 export const getUsersAPI = () => {
    return GetTokens().then(
       (user) => {
@@ -54,6 +62,20 @@ export const getUserbyIdAPI = (id) => {
    });;
 }
 
+export const getDisciplinesAPI = () => {
+   let path = "/DisciplineDBs";
+   debugger
+   return instance.get(path).then(responce => {
+      debugger
+      return responce.data
+   }).catch((error) => {
+      console.log("Api call error");
+      alert(error.message);
+   });;
+}
+
+
+
 export const getListbyIdAPI = (id) => {
    let path = "ListOfDisciplines/" + id;
    debugger
@@ -79,7 +101,6 @@ export const createUserAPI = (newUser) => {
       alert(error.message);
    });;
 }
-
 export const getAcademicDegreesAPI = () => {
    return instance.get("AcademicDegrees/").then(responce => {
       return responce.data

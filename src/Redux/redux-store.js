@@ -9,8 +9,10 @@ import { newUserReduser } from './newUser-reduser'
 import { CadetsReduser } from './cadets-reduser'
 import { updateUserReduser } from './updateuser-reduser.js'
 import { reducer as formReducer } from 'redux-form'
+import {DisciplinesReduser} from './disciplines-redux'
 let redusersBatch = combineReducers({
    newsReduser,
+   DisciplinesReduser,
    timetableReduser,
    UserReduser,
    ProfileReduser,
